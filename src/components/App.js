@@ -28,8 +28,8 @@ const App=()=> {
     return(
         <div id="main">
             <form>
-                <input type="text" data-testid="input1" placeholder="Enter first Name" onChange={(e)=>setName1(e.target.value)} value={name1}></input>
-                <input type="text" data-testid="input2" placeholder="Enter second Name" onChange={(e)=>setName2(e.target.value)} value={name2}></input>
+                <input name="name1" type="text" data-testid="input1" placeholder="Enter first Name" onChange={(e)=>setName1(e.target.value)} value={name1}></input>
+                <input name="name2" type="text" data-testid="input2" placeholder="Enter second Name" onChange={(e)=>setName2(e.target.value)} value={name2}></input>
                 <button onClick={calculateRelationship} data-testid="calculate_relationship" type="submit">Calculate Relationship Future</button>
                 <button data-testid="clear" type="reset" onClick={()=> {
                     setName1("")
