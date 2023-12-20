@@ -10,8 +10,9 @@ const App=()=> {
 
     function calculateRelationship(e) {
         e.preventDefault();
-        if(name1.trim()==="" || name2.trim()==="") {
-            setRelationship("Please enter valid names")
+        if(name1.trim() === "" || name2.trim() === "") {
+            setRelationship("Please Enter valid names")
+            return;
         }
         let str1 = name1;
         let str2 = name2;
