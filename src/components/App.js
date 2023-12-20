@@ -17,7 +17,7 @@ const App=()=> {
         let str1 = name1;
         let str2 = name2;
         for(let t of name1) {
-            if(name2.includes(t)) {
+            if(str2.includes(t)) {
                 str1 = str1.replace(t, "")
                 str2 = str2.replace(t, "")
             }
